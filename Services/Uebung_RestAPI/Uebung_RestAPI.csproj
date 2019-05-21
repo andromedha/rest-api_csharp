@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossCutting\DataClasses\DataClasses.csproj" />
+    <ProjectReference Include="..\..\Data\Repository.Csv\Repository.Csv.csproj" />
+    <ProjectReference Include="..\..\Data\Repository.Sql\Repository.Sql.csproj" />
+    <ProjectReference Include="..\..\Logic\PersonManagement.Contracts\PersonManagement.Contracts.csproj" />
+    <ProjectReference Include="..\..\Logic\PersonManagement\PersonManagement.csproj" />
+  </ItemGroup>
+
+</Project>
